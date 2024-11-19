@@ -1,0 +1,201 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aramore Bakes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="company">Aramore Bakes</div>
+        <nav>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="nav-links">
+                <li><a href="#home" class="nav-button">Home</a></li>
+                <li><a href="#menu" class="nav-button">Menu</a></li>
+                <li><a href="#about" class="nav-button">About Us</a></li>
+                <li><a href="#reviews" class="nav-button">Reviews</a></li>
+                <li><a href="#contact" class="nav-button">Contact</a></li>
+            </ul>
+        </nav>
+    </header>    
+    
+    <section id="home" class="hero">
+        <h1>Freshly Baked Happiness!</h1>
+        <a href="#menu" class="cta-button">View Our Menu</a>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-category">
+            <h3>Cookies</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="chocolate-chip.jpg" alt="Chocolate Chip Cookies" loading="lazy">
+                    <p>Chocolate Chip - ₹160<br>Classic cookies loaded with chocolate chips.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="besan.jpg" alt="Besan Cookies" loading="lazy">
+                    <p>Besan - ₹140<br>Delicious gram flour cookies.</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category">
+            <h3>Pastries</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="black-forest.jpg" alt="Black Forest Pastry" loading="lazy">
+                    <p>Black Forest - ₹50<br>A rich and moist chocolate cake with cherries.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="pineapple.jpg" alt="Pineapple Pastry" loading="lazy">
+                    <p>Pineapple - ₹45<br>Refreshing pineapple pastry with creamy frosting.</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category">
+            <h3>Cakes</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="strawberry.jpg" alt="Strawberry Cake" loading="lazy">
+                    <p>Strawberry Cake - ₹250<br>A delightful strawberry-flavored cake.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="blueberry.jpeg" alt="Blueberry Cheesecake" loading="lazy">
+                    <p>Blueberry Cheesecake - ₹180<br>Rich cheesecake topped with fresh blueberries.</p>
+                </div>
+            </div>
+        </div>
+        <div class="menu-category">
+            <h3>Beverages</h3>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="mocha.jpg" alt="Mocha" loading="lazy">
+                    <p>Mocha - ₹80<br>A perfect blend of coffee and chocolate.</p>
+                </div>
+                <div class="menu-item">
+                    <img src="iced-coffee.jpg" alt="Iced Coffee" loading="lazy">
+                    <p>Iced Coffee - ₹120<br>Chilled coffee served with ice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="bakery.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <p>At Aramore Bakes, we believe that every baked good tells a story. Founded in 2020, our bakery was born from a deep passion for baking and a commitment to quality. We source the finest ingredients, and each item is crafted with love and care.</p>
+        <h3>Meet the Team</h3>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="lilian.jpg" alt="Lilian Rose" loading="lazy">
+                <p><strong>Lilian Rose</strong>: Head Baker - <br> With over 10 years of baking experience, Lilian ensures every treat is perfect!</p>
+            </div>
+            <div class="team-member">
+                <img src="richard.jpg" alt="Richard Smith" loading="lazy">
+                <p><strong>Richard Smith</strong>: Barista - <br> Richard's coffee knowledge enhances every customer’s experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review">
+            <img src="taylor-swift.jpg" alt="Taylor Swift" class="reviewer-img" loading="lazy">
+            <p>“The best bakery in town! Everything is fresh and delicious.” - <strong>Taylor Swift</strong></p>
+        </div>
+        <div class="review">
+            <img src="jeon-jungkook.jpg" alt="Jeon Jungkook" class="reviewer-img" loading="lazy">
+            <p>“I love the pastries! They remind me of my childhood.” - <strong>Jeon Jungkook</strong></p>
+        </div>
+        <div class="review">
+            <img src="ariana-grande.jpg" alt="Ariana Grande" class="reviewer-img" loading="lazy">
+            <p>“Amazing flavors and wonderful service!” - <strong>Ariana Grande</strong></p>
+        </div>
+        <div class="review">
+            <img src="tom-holland.jpg" alt="Tom Holland" class="reviewer-img" loading="lazy">
+            <p>“Their cakes are a must-try for any celebration!” - <strong>Tom Holland</strong></p>
+        </div>
+    </section>
+
+    <section id="order">
+        <h2>Order Now</h2>
+        <form id="order-form">
+            <label for="item-select">Choose items:</label>
+            
+            <div class="order-items">
+                <label>
+                    <input type="checkbox" name="item" value="Chocolate Chip - ₹160"> Chocolate Chip - ₹160
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Besan - ₹140"> Besan - ₹140
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Black Forest - ₹50"> Black Forest - ₹50
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Pineapple - ₹45"> Pineapple - ₹45
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Strawberry Cake - ₹250"> Strawberry Cake - ₹250
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Blueberry Cheesecake - ₹180"> Blueberry Cheesecake - ₹180
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Mocha - ₹80"> Mocha - ₹80
+                </label>
+                <label>
+                    <input type="checkbox" name="item" value="Iced Coffee - ₹120"> Iced Coffee - ₹120
+                </label>
+            </div>
+            
+            <button type="submit">Order Now</button>
+            <div id="order-summary"></div>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form> 
+        <div class="newsletter">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Stay updated with our latest offers and freshly baked goodies!</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>        
+    </section>    
+    <footer>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank" class="social-icon">
+                <i class="fab fa-facebook-square" style="color: #3b5998; font-size: 30px;"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon">
+                <i class="fab fa-instagram" style="color: #e4405f; font-size: 30px;"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-icon">
+                <i class="fab fa-twitter-square" style="color: #1da1f2; font-size: 30px;"></i>
+            </a>
+        </div>
+        <p>© 2024 Aramore Bakes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
