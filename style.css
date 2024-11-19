@@ -286,7 +286,9 @@ video {
 
 #newsletter-form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 10px;
 }
 
@@ -296,12 +298,14 @@ video {
     border-radius: 5px;
     width: 250px;
     margin-right: 10px;
+    margin-bottom: 15px;
 }
 
 #newsletter-form button {
     background-color: rgb(137, 8, 8);
     color: black;
     padding: 10px 15px;
+    width: 100px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
