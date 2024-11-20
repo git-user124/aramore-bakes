@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div class="company">Aramore Bakes</div>
+        <div class="name">Aramore Bakes</div>
         <nav>
             <div class="hamburger-menu" id="hamburger-menu">
                 <i class="fas fa-bars"></i>
@@ -28,7 +28,7 @@
     
     <section id="home" class="hero">
         <h1>Freshly Baked Happiness!</h1>
-        <a href="#menu" class="cta-button">View Our Menu</a>
+        <a href="#menu" class="view-button">View Our Menu</a>
     </section>
 
     <section id="menu">
@@ -137,37 +137,20 @@
     <section id="order">
         <h2>Order Now</h2>
         <form id="order-form">
-            <label for="item-select">Choose items:</label>
+            Choose items:
             
             <div class="order-items">
-                <label>
                     <input type="checkbox" name="item" value="Chocolate Chip - ₹160"> Chocolate Chip - ₹160
-                </label>
-                <label>
                     <input type="checkbox" name="item" value="Besan - ₹140"> Besan - ₹140
-                </label>
-                <label>
                     <input type="checkbox" name="item" value="Black Forest - ₹50"> Black Forest - ₹50
-                </label>
-                <label>
                     <input type="checkbox" name="item" value="Pineapple - ₹45"> Pineapple - ₹45
-                </label>
-                <label>
                     <input type="checkbox" name="item" value="Strawberry Cake - ₹250"> Strawberry Cake - ₹250
-                </label>
-                <label>
-                    <input type="checkbox" name="item" value="Blueberry Cheesecake - ₹180"> Blueberry Cheesecake - ₹180
-                </label>
-                <label>
+                    <input type="checkbox" name="item" value="Blueberry Cheesecake - ₹180"> Blueberry Cheesecake - ₹18
                     <input type="checkbox" name="item" value="Mocha - ₹80"> Mocha - ₹80
-                </label>
-                <label>
                     <input type="checkbox" name="item" value="Iced Coffee - ₹120"> Iced Coffee - ₹120
-                </label>
             </div>
             
-            <button type="submit">Order Now</button>
-            <div id="order-summary"></div>
+            <button type="button" onclick="order()">Order Now</button>
         </form>
     </section>
 
@@ -175,29 +158,29 @@
         <h2>Contact Us</h2>
         <form id="contact-form">
             <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
+            <button type="button">Send Message</button>
         </form> 
         <div class="newsletter">
             <h3>Subscribe to Our Newsletter</h3>
             <p>Stay updated with our latest offers and freshly baked goodies!</p>
             <form id="newsletter-form">
                 <input type="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
+                <button type="button">Subscribe</button>
             </form>
         </div>        
     </section>    
     <footer>
         <div class="social-media">
             <a href="https://facebook.com" target="_blank" class="social-icon">
-                <i class="fab fa-facebook-square" style="color: #3b5998; font-size: 30px;"></i>
+                <i class="fab fa-facebook-square" style="color: #3b5998; font-size: 35px;"></i>
             </a>
             <a href="https://instagram.com" target="_blank" class="social-icon">
-                <i class="fab fa-instagram" style="color: #e4405f; font-size: 30px;"></i>
+                <i class="fab fa-instagram" style="color: #e4405f; font-size: 35px;"></i>
             </a>
             <a href="https://twitter.com" target="_blank" class="social-icon">
-                <i class="fab fa-twitter-square" style="color: #1da1f2; font-size: 30px;"></i>
+                <i class="fab fa-twitter-square" style="color: #1da1f2; font-size: 35px;"></i>
             </a>
         </div>
         <p>© 2024 Aramore Bakes. All rights reserved.</p>
