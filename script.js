@@ -1,21 +1,22 @@
-document.getElementById('hamburger-menu').addEventListener('click', function() {
-document.querySelector('nav').classList.toggle('active');
-});
+hamburgerMenu = document.getElementById('hamburger-menu')
+const nav = document.querySelector('nav')
 
-document.getElementById('order-form').addEventListener('submit', function(event) {
-  event.preventDefault();
-  
-  const selectedItems = [];
-  const checkboxes = document.querySelectorAll('input[name="item"]:checked');
-  
-  checkboxes.forEach(function(checkbox) {
-      selectedItems.push(checkbox.value);
-  });
-  
-  const orderSummary = document.getElementById('order-summary');
-  if (selectedItems.length > 0) {
-      orderSummary.innerHTML = `<h3>Your Order:</h3><ul>${selectedItems.map(item => `<li>${item}</li>`).join('')}</ul>`;
-  } else {
-      orderSummary.innerHTML = '<p>No items selected.</p>';
-  }
-});
+hamburgerMenu.onclick = function() {
+    nav.classList.toggle('active')
+}
+
+function order() {
+    
+    selectedItems = []
+    checkboxes = document.querySelectorAll('input[name="item"]:checked')
+    
+    checkboxes.forEach(function(checkbox) {
+        selectedItems.push(checkbox.value)
+    })
+    
+    if (selectedItems.length > 0) {
+        orderMessage = "Your Order:\n" + selectedItems.join('\n')
+        alert(orderMessage) 
+    } else 
+        alert('No items selected.')
+}
